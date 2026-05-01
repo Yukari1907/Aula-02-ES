@@ -1,79 +1,78 @@
 # Aula02-ES
 
-Parte 1:
+EXERCÍCIO PRÁTICO: Hands-On!
+Desafio: Conversor de Temperatura
+Contexto: Um usuário precisa converter temperaturas entre Celsius e Fahrenheit rapidamente.
+Sua Missão 🎯
 
-Requisitos Funcionais (RF)
+PARTE 1: Elicitação (10 min)
 
-- RF01: O sistema deve converter temperatura de Celsius para Fahrenheit.
+Imagine que você entrevistou o usuário:
+"Eu trabalho com receitas internacionais e sempre 
+preciso converter temperaturas. Às vezes a receita 
+vem em Fahrenheit mas meu forno é em Celsius. 
+Preciso de algo rápido que converta nos dois sentidos."
 
-- RF02: O sistema deve converter temperatura de Fahrenheit para Celsius.
+Sua tarefa:
+Identifique os requisitos:
 
-- RF03: O sistema deve permitir que o usuário escolha o tipo de conversão e informe o valor da temperatura.
+Requisitos Funcionais (RF):
+- RF01: [COMPLETE AQUI - pense no que o sistema precisa fazer]
+- RF02: [COMPLETE AQUI]
+- RF03: [COMPLETE AQUI]
+  
+Requisitos Não-Funcionais (RNF):
+- RNF01: [COMPLETE AQUI - pense em performance, usabilidade]
+- RNF02: [COMPLETE AQUI]
 
-- RF04: O sistema deve exibir o resultado da conversão formatado com uma casa decimal.
+PARTE 2: Implementação (30 min)
+Template para resolver (Google Colab / VS Code):
 
-Requisitos Não-Funcionais (RNF)
-
-- RNF01 (Usabilidade): O sistema deve possuir interface simples e intuitiva no terminal.
-
-- RNF02 (Desempenho): A conversão deve ser realizada imediatamente após a entrada do usuário.
-
-- RNF03 (Confiabilidade): O sistema deve tratar entradas inválidas (ex: letras no lugar de números).
-
-Parte 2
-
-# ====================================
-# CONVERSOR DE TEMPERATURA
-# Exercício - Engenharia de Software
-# ====================================
+CONVERSOR DE TEMPERATURA
+Exercício - Engenharia de Software
 
 def celsius_para_fahrenheit(celsius):
     """
-    RF01: Converter Celsius para Fahrenheit
+    RF??: Converter Celsius para Fahrenheit
     Fórmula: F = (C × 9/5) + 32
     """
-    return (celsius * 9/5) + 32
-
+    # TODO: Implemente a conversão
+    pass
 
 def fahrenheit_para_celsius(fahrenheit):
     """
-    RF02: Converter Fahrenheit para Celsius
+    RF??: Converter Fahrenheit para Celsius
     Fórmula: C = (F - 32) × 5/9
     """
-    return (fahrenheit - 32) * 5/9
+    # TODO: Implemente a conversão
+    pass
 
-
-# ====================================
-# PROGRAMA PRINCIPAL
-# ====================================
+PROGRAMA PRINCIPAL
 
 print("="*40)
 print("  CONVERSOR DE TEMPERATURA")
 print("="*40)
-
-print("Escolha a conversão:")
-print("1 - Celsius → Fahrenheit")
-print("2 - Fahrenheit → Celsius")
-
-opcao = input("Opção: ")
-
-try:
-    if opcao == "1":
-        temperatura = float(input("Digite a temperatura em Celsius: "))
-        resultado = celsius_para_fahrenheit(temperatura)
-        print("="*40)
-        print(f"{temperatura:.1f}°C = {resultado:.1f}°F")
-
-    elif opcao == "2":
-        temperatura = float(input("Digite a temperatura em Fahrenheit: "))
-        resultado = fahrenheit_para_celsius(temperatura)
-        print("="*40)
-        print(f"{temperatura:.1f}°F = {resultado:.1f}°C")
-
-    else:
-        print("Opção inválida!")
-
-except ValueError:
-    print("Erro: Digite apenas números válidos para a temperatura.")
-
+TODO: Pergunte ao usuário qual conversão deseja
+Opção 1: Celsius → Fahrenheit
+Opção 2: Fahrenheit → Celsius
+TODO: Receba o valor de temperatura
+TODO: Faça a conversão apropriada
+TODO: Exiba o resultado formatado
 print("="*40)
+
+Dicas para Resolver
+Fórmulas:
+Celsius → Fahrenheit: F = (C × 9/5) + 32
+Fahrenheit → Celsius: C = (F - 32) × 5/9
+
+Exemplo de saída esperada:
+
+CONVERSOR DE TEMPERATURA
+
+Escolha a conversão:
+1 - Celsius → Fahrenheit
+2 - Fahrenheit → Celsius
+
+Opção: 1
+Digite a temperatura em Celsius: 25
+25.0°C = 77.0°F
