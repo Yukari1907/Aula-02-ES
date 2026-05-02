@@ -36,7 +36,7 @@ def celsius_para_fahrenheit(celsius):
     RF??: Converter Celsius para Fahrenheit
     Fórmula: F = (C × 9/5) + 32
   
-    # TODO: Implemente a conversão
+    TODO: Implemente a conversão
     pass
 
 def fahrenheit_para_celsius(fahrenheit):
@@ -53,12 +53,12 @@ PROGRAMA PRINCIPAL
     print("="*40)
     print("  CONVERSOR DE TEMPERATURA")
     print("="*40)
-    TODO: Pergunte ao usuário qual conversão deseja
-    Opção 1: Celsius → Fahrenheit
-    Opção 2: Fahrenheit → Celsius
-    TODO: Receba o valor de temperatura
-    TODO: Faça a conversão apropriada
-    TODO: Exiba o resultado formatado
+              TODO: Pergunte ao usuário qual conversão deseja
+              Opção 1: Celsius → Fahrenheit
+              Opção 2: Fahrenheit → Celsius
+              TODO: Receba o valor de temperatura
+              TODO: Faça a conversão apropriada
+              TODO: Exiba o resultado formatado
     print("="*40)
 
 Dicas para Resolver
